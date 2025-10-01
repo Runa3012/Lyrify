@@ -1,7 +1,9 @@
 🎵 Lyrify
 
 
+
 Lyrify is a widget-like app that tries its best to show you real-time, synced lyrics for the music you're listening to.
+
 
 
 🚀 Features
@@ -13,11 +15,16 @@ Customizable: Easily change the look and feel in the static/style.css file.
 
 
 🛠️ How to Run
-Setup: With Python installed, open a terminal in the project folder and run:
 
+Setup: 
+
+
+With Python installed, open a terminal in the project folder and run:
 pip install -r requirements.txt
 
+
 Add Keys: Create a .env file and add your Spotify API keys. (You can get these from the Spotify Developer Dashboard).
+
 
 SPOTIPY_CLIENT_ID='YOUR_CLIENT_ID'
 
@@ -49,11 +56,21 @@ Right-click it, choose Edit, and paste the following code:
 
 
 @echo off
+
 echo Starting Spotify and Lyrify...
+
 start spotify:
+
 timeout /t 5 /nobreak >nul
+
 start "" python app.py
+
 exit
+
+
+
+
+
 
 
 Now, you can just double-click launch.bat to start everything at once!
